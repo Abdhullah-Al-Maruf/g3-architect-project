@@ -98,11 +98,9 @@ nav,
 /* responsive for mobile */
 @media screen and (max-width:576px) {
     /* banner and nav section */
-    nav , .menu{
+    nav ,
+    .menu{
         flex-direction: column;
-        
-    }
-    .logo{
-        margin-bottom: 20px;
+      
     }
 }
