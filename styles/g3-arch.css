@@ -28,14 +28,14 @@
 .dark-3 {
     color: #727272;
     font-size: 1rem;
-    line-height:26px;
+    line-height: 26px;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #FF900E;
     color: #FFFFFF;
     border-radius: 8px;
-    border:none;
+    border: none;
     padding: 20px 25px;
     font-size: 1.25rem;
     font-weight: 600;
@@ -57,7 +57,8 @@ nav {
 }
 
 nav,
-.banner{
+.banner,
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -86,30 +87,67 @@ nav,
     font-size: 4rem;
     margin-bottom: 20px;
 }
-.banner-content p{
+
+.banner-content p {
     margin-bottom: 32px;
 }
-.banner-image img{
+
+.banner-image img {
     width: 100%;
     margin-top: 55px;
+    margin-bottom: 45px;
 }
+/* team feature section */
+#teams-features{
+    margin-top: 85px;
+    align-items: center;
+}
+.team-images-container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 24px;
 
+}
+.text-content{
+    margin-left: 73px;
+    max-width: 537px;
+}
+.text-content .text-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+ 
+}
+#quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+#feature{
+    color: #FF900E;
+}
+.description{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
 
 /* responsive for mobile */
 @media screen and (max-width:576px) {
+
     /* banner and nav section */
-    nav ,
-    .menu{
+    nav,
+    .menu {
         flex-direction: column;
-      
+
     }
+
     .banner-content h2 {
-    font-size: 2rem;
-}
-.logo {
-    font-size: 1.5rem;
-}
-.btn-primary{
-    font-size: 1rem;
-}
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
 }
