@@ -57,28 +57,31 @@
      <section></section>
      <!-- some fact section -->
       <section id="some-fact">
-        <h2>Some Facts</h2>
+        <h2 class="sec-title dark-one">Some Facts</h2>
         <p class="dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
         <div class="card-container">
-            <div class="fact-card">
-                <img src="images/icons/ribon.png" alt="icon of a ribon">
+            <div class="fact-card display-flex">
+                <!-- if we give display flex without wraping the img h2 p into a div it will flex them but its not our main purpose. our purpose is to align center the content horiznetaly and vertically so we will use flex but wrap the content in a extra div  -->
+               <div>
+                 <img src="images/icons/ribon.png" alt="icon of a ribon">
                 <h2 class="number">54</h2>
-                <p class="">Awards Winnings</p>
+                <p class="small-description dark-3">Awards Winnings</p>
+               </div>
             </div>
-            <div class="fact-card">
-                <img src="images/icons/projects.png" alt="picture of a icon called projects">
-                <h2>1458</h2>
-                <p>Project Finished</p>
+            <div class="fact-card display-flex">
+              <div><img src="images/icons/projects.png" alt="picture of a icon called projects">
+                <h2 class="number">1458</h2>
+                <p class="small-description dark-3">Project Finished</p></div>
             </div>
-            <div class="fact-card">
-                <img src="images/icons/customers.png" alt="icon name customers.png">
-                <h2>590</h2>
-                <p>Clients Worked</p>
+            <div class="fact-card display-flex">
+              <div><img src="images/icons/customers.png" alt="icon name customers.png">
+                <h2 class="number">590</h2>
+                <p class="small-description dark-3">Clients Worked</p></div>
             </div>
-            <div class="fact-card">
-                <img src="images/icons/email.png" alt="icon named as email">
-                <h2>22578</h2>
-                <p>Email Send</p>
+            <div class="fact-card display-flex">
+               <div> <img src="images/icons/email.png" alt="icon named as email">
+                <h2 class="number">22578</h2>
+                <p class="small-description dark-3">Email Send</p></div>
             </div>
         </div>
       </section>
