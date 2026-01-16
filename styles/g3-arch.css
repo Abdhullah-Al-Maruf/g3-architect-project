@@ -138,12 +138,14 @@ main {
 }
 #some-fact>p{
     margin-bottom:100px; 
+    width: 537px;
 }
 
 
 .card-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    justify-items: center;
 }
 .card-container .fact-card{
     width: 241px;
@@ -167,6 +169,31 @@ main {
     font-weight: 600;
 }
 
+/* our sponsor section */
+#our-sponser{
+    margin-top: 180px;
+}
+.sponsor-description{
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-description h2{
+    font-size: 2.5rem;
+    margin-bottom:24px;
+
+}
+.sponsor-description p{
+    margin-bottom:50px;
+
+}
+.sponser-container{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+}
+.sponser-container img{
+    filter: grayscale(100%);
+}
 
 /* responsive for mobile */
 @media screen and (max-width:576px) {
