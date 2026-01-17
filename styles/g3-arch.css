@@ -47,6 +47,11 @@
     background-color: rgba(110, 108, 114, 0.582);
 }
 
+/* some transform effect to the cards. */
+.fact-card:hover,
+.feature-card:hover{
+    transform:  translateX(20px) rotate(-5deg)  scale(1.09);
+}
 /* main style */
 
 /* nav style */
@@ -172,6 +177,7 @@ footer {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 5px 5px 5px 5px #7272723a;
+    transition: transform 1s;
 }
 
 .feature-card h4 {
@@ -224,6 +230,7 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
+    transition: transform 2s;
 
 }
 
@@ -434,3 +441,5 @@ footer {
 
 
 }
+
+
