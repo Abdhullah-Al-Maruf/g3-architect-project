@@ -58,7 +58,8 @@ nav {
 
 nav,
 .banner,
-main {
+main,
+footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -97,103 +98,193 @@ main {
     margin-top: 55px;
     margin-bottom: 45px;
 }
+
 /* team feature section */
-#teams-features{
+.teams-features {
     margin-top: 85px;
     align-items: center;
 }
-.team-images-container{
+
+.team-images-container {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 
 }
-.text-content{
+
+.text-content {
     margin-left: 73px;
     max-width: 537px;
 }
-.text-content .text-title{
+
+.text-content .text-title {
     font-size: 2.7rem;
     font-weight: 700;
- 
+
 }
-#quick-list{
+
+#quick-list {
     color: #727272;
     font-weight: 500;
 }
-#feature{
+
+#feature {
     color: #FF900E;
 }
-.description{
+
+.description {
     margin-top: 24px;
     margin-bottom: 32px;
+    text-align: justify;
 }
+
+/* feature you will love section */
+#feature-border{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.container-feature {
+    margin-top: 80px;
+}
+
+.blank {
+    height: 5px;
+    background-color: #FF900E;
+}
+
+.heading-description {
+    max-width: 537px;
+}
+
+.heading-description h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.feature-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px
+}
+
+.feature-card {
+    max-width: 537px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px #7272723a;
+}
+
+.feature-card h4 {
+    margin-bottom: 10px;
+}
+
+.architect-container {
+    margin-left: 100px;
+}
+
+.big-text {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.box-1 {
+    margin-left: -100px;
+    margin-top:-100px;
+    text-align: center;
+    padding-left: 40px;
+}
+
 /* some-fact section */
-#some-fact{
+#some-fact {
     margin-top: 130px;
 }
-#some-fact .sec-title{
+
+#some-fact .sec-title {
     font-size: 2.8rem;
     margin-bottom: 24px;
 }
-#some-fact>p{
-    margin-bottom:100px; 
-    width: 537px;
+
+#some-fact .some-fact-textcontent {
+    margin-bottom: 100px;
+    max-width: 537px;
 }
 
 
-.card-container{
+.card-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
 }
-.card-container .fact-card{
+
+.card-container .fact-card {
     width: 241px;
     height: 241px;
-    border:  1px solid #FF900E ;
+    border: 1px solid #FF900E;
     border-radius: 8px;
     text-align: center;
     align-items: center;
     justify-content: center;
 
 }
-.fact-card .number{
-    margin-top:10px ;
-    font-size:2.8rem;
+
+.fact-card .number {
+    margin-top: 10px;
+    font-size: 2.8rem;
     font-weight: 600;
     color: #424242;
 }
-.fact-card .small-description{
-    margin-top:5px ;
-    font-size:1.25rem;
+
+.fact-card .small-description {
+    margin-top: 5px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 /* our sponsor section */
-#our-sponser{
+#our-sponser {
     margin-top: 180px;
 }
-.sponsor-description{
+
+.sponsor-description {
     max-width: 542px;
     margin: 0 auto;
     text-align: center;
 }
-.sponsor-description h2{
+
+.sponsor-description h2 {
     font-size: 2.5rem;
-    margin-bottom:24px;
+    margin-bottom: 24px;
 
 }
-.sponsor-description p{
-    margin-bottom:50px;
+
+.sponsor-description p {
+    margin-bottom: 50px;
 
 }
-.sponser-container{
+
+.sponser-container {
     display: grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
-.sponser-container img{
+
+.sponser-container img {
     filter: grayscale(100%);
+    margin-bottom: 80px;
 }
+
+/* footer-section */
+footer {
+    height: 66px;
+    margin: 0 auto 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hide {
+    display: none !important;
+}
+
 
 /* responsive for mobile */
 @media screen and (max-width:576px) {
@@ -202,6 +293,7 @@ main {
     nav,
     .menu {
         flex-direction: column;
+        flex-wrap: wrap;
 
     }
 
@@ -217,21 +309,115 @@ main {
     .btn-primary {
         font-size: 1rem;
     }
-    
+
     /* team-section */
-    #teams-features{
-       flex-direction: column;
+    .teams-features,
+    .container-feature {
+        flex-direction: column;
     }
-    .team-images-container{
-           grid-template-columns: 1fr;
-           
+
+    .team-images-container,
+    .card-container,
+    .sponser-container {
+        grid-template-columns: 1fr;
+
     }
-    .text-content{
+   
+
+
+    .text-content,
+    .some-fact-textcontent,
+    .sponsor-description,
+    .text-and-card-container {
         margin-top: 20px;
-        margin-left:16px;
-       
+        margin-left: 10px;
+
     }
-    .team-images-container img{
+/* some feature section */
+.architect-container img{
+    width: 100%;
+    margin-top: 20px;
+}
+.architect-container{
+    margin: 0 auto;
+}
+
+    /* somefact-section */
+
+    .team-images-container img {
         width: 100%;
     }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .fact-card{
+        max-width: 200px;
+        justify-items: center;
+
+    }
+
+    /* badge */
+    .box-1 {
+       margin: 20px 20px;
+}
+
+
+    /* sposnser section */
+    .sponsor-description {
+        text-align: justify;
+    }
+
+    .sponsor-description h2 {
+        font-size: 2rem;
+    }
+
+    .sponser-container {
+        justify-items: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:912px) {
+    .menu {
+        margin-right: 10px;
+    }
+
+    .teams-features {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .sponser-container,
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    #some-fact .some-fact-textcontent {
+        margin: 0 auto 30px;
+        text-align: center;
+
+    }
+.architect-container {
+    margin-left: 40px;
+}
+    .text-and-card-container{
+        margin-left: 15px;
+    }
+.architect-container img{
+    width: 100%;
+  
+}
+.box-1 {
+    padding-left: 80px;
+}
+
+
 }
