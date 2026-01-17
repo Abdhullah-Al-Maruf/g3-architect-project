@@ -39,7 +39,12 @@
     padding: 20px 25px;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
 
+}
+.btn-primary:hover{
+
+    background-color: rgba(110, 108, 114, 0.582);
 }
 
 /* main style */
@@ -145,11 +150,6 @@ footer {
 }
 .container-feature {
     margin-top: 80px;
-}
-
-.blank {
-    height: 5px;
-    background-color: #FF900E;
 }
 
 .heading-description {
@@ -289,6 +289,8 @@ footer {
 /* responsive for mobile */
 @media screen and (max-width:576px) {
 
+
+
     /* banner and nav section */
     nav,
     .menu {
@@ -359,8 +361,19 @@ footer {
     }
 
     /* badge */
+    #feature-border{
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+.big-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
     .box-1 {
-       margin: 20px 20px;
+        margin-top: 10px;
+      justify-content: center;
+        margin-left: 2px;
+    
 }
 
 
